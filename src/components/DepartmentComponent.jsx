@@ -41,7 +41,7 @@ const DepartmentComponent = () => {
         } else {
             createDepartment(department).then((response) => {
                 console.log(response.data);
-                navigator('/departments')
+                navigator('/departments');
             }).catch(error => {
                 console.error(error);
             })

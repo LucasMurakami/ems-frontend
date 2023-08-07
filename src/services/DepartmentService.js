@@ -15,14 +15,9 @@ export const getDepartmentByID = (departmentID) => {
 }
 
 export const updateDepartment = (departmentID, department) => {
-    return axios.put(DEPARTMENT_REST_API_BASE_URL + '/' + departmentID, department)
+    return axios.put(DEPARTMENT_REST_API_BASE_URL + '/' + departmentID, department);
 }
 
 export const deleteDepartment = (departmentID) => {
     return axios.delete(DEPARTMENT_REST_API_BASE_URL + '/' + departmentID);
 }
-
-axios({
-    method: 'get',
-    url: DEPARTMENT_REST_API_BASE_URL
-})
